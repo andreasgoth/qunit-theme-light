@@ -1,0 +1,63 @@
+// Variables
+
+$bg-color: #f5f5f5;
+
+$pass-color: #4ac062;
+$fail-color: #b1353a;
+$diff-color: #3a5fb2;
+$notice-color: #3eafb3;
+$loading-color: #2e8ffb;
+
+$list-pass-bg-color: #fff;
+$list-fail-bg-color: #fff8f8;
+
+$global-radius: 3px;
+
+$banner-height: 6px;
+
+$side-margin: 1rem;
+
+// Imports
+
+@import 'header';
+@import 'table';
+@import 'test-list';
+@import 'testresult';
+@import 'tests';
+@import 'toolbar';
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,900,700);
+
+body {
+  margin: 0;
+}
+
+strong, b {
+  font-weight: 700;
+}
+
+#qunit {
+  background-color: $bg-color;
+  padding: 0.5rem 0rem 2rem 0rem;
+  font-family: "Roboto", "Helvetica Neue Light", "HelveticaNeue-Light", "Helvetica Neue", Calibri, Helvetica, Arial, sans-serif;
+}
+
+#qunit-userAgent {
+  display: none;
+}
+
+.qunit-source {
+  margin: 0.6em 0 0.3em;
+}
+
+.qunit-collapsed {
+  display: none;
+}
+
+#qunit-fixture {
+  position: absolute;
+  top: -10000px;
+  left: -10000px;
+  width: 1000px;
+  height: 1000px;
+}

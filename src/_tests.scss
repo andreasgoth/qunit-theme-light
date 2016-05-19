@@ -1,0 +1,62 @@
+#qunit-tests {
+  list-style: none;
+  margin: 0 $side-margin;
+  padding: 0;
+
+  .qunit-assert-list {
+    padding: 0;
+    list-style: none;
+  }
+
+  b.counts {
+    color: rgba(0,0,0,0.4);
+    font-size: 0.6rem;
+  }
+  b.passed {
+    color: $pass-color;
+  }
+  b.failed {
+    color: $fail-color;
+  }
+
+  .qunit-skipped-label {
+    background-color: #F4FF77;
+    display: inline-block;
+    font-style: normal;
+    color: #366097;
+    line-height: 1.8em;
+    padding: 0 0.5em;
+    margin: -0.4em 0.4em -0.4em 0;
+  }
+
+  .skipped {
+    background-color: #EBECE9;
+  }
+
+  .qunit-source {
+    color: rgba(0,0,0,0.7);
+  }
+
+  pre {
+    margin: 0;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+  }
+
+  del {
+    background-color: #E0F2BE;
+    color: #374E0C;
+    text-decoration: none;
+  }
+
+  ins {
+    background-color: #FFCACA;
+    color: #500;
+    text-decoration: none;
+  }
+
+  // Hide test if not passed, failed or running
+  & > li {
+    display: none;
+  }
+}

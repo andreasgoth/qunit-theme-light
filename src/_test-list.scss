@@ -1,0 +1,107 @@
+#qunit-tests {
+  li {
+    padding: 0.6rem 0.8rem;
+    font-size: 0.8rem;
+    margin-top: 4px;
+    border-radius: $global-radius;
+    box-shadow: 0 0 0 1px rgba(0,0,0,0.1);
+    border-left: 3px solid #ccc;
+    transition: background-color 1s, border-color 1s;
+
+    .module-name,
+    .test-name {
+      font-weight: normal;
+    }
+
+    &.pass {
+      background-color: $list-pass-bg-color;
+      border-left: 3px solid $pass-color;
+
+      .test-actual,
+      .test-expected {
+        color: #999;
+      }
+    }
+
+    &.fail {
+      background-color: $list-fail-bg-color;
+      border-left: 3px solid $fail-color;
+
+      .test-actual   { color: $fail-color; }
+      .test-expected { color: $pass-color; }
+      .test-diff     { color: $diff-color; }
+      .test-source   { color: #666; }
+    }
+
+    &.pass,
+    &.fail {
+      .qunit-assert-list {
+        margin-top: 1rem;
+      }
+    }
+
+    li.pass,
+    li.fail {
+      background-color: #fff;
+    }
+
+    &.skipped strong {
+      cursor: default;
+    }
+
+    .runtime {
+      float: right;
+      font-size: 0.6rem;
+      color: #999;
+      margin-top: 2px;
+    }
+
+    strong {
+      cursor: pointer;
+    }
+
+    // Rerun link
+    a {
+      opacity: 0;
+      padding: 0.5em;
+      color: #C2CCD1;
+      text-decoration: none;
+      transition: opacity 1s;
+
+      &:hover,
+      &:focus {
+        color: #000;
+      }
+    }
+
+    &:hover {
+      a {
+      opacity: 1;
+      }
+    }
+  }
+
+  li.running,
+  li.pass,
+  li.fail,
+  li.skipped {
+    display: list-item;
+  }
+
+  &.hidepass {
+    position: relative;
+
+    // li.running,
+    li.pass  {
+      visibility: hidden;
+      position: absolute;
+      width:   0;
+      height:  0;
+      padding: 0;
+      border:  0;
+      margin:  0;
+
+    }
+  }
+
+}

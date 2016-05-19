@@ -1,0 +1,56 @@
+#qunit-header {
+  margin: $banner-height+30px 0 0 0;
+  padding: 0.5em $side-margin 0.2em $side-margin;
+
+  font-size: 1.5em;
+  line-height: 1em;
+  font-weight: 400;
+
+  a {
+    text-decoration: none;
+    color: #666;
+
+    &:hover,
+    &:focus {
+      color: #999;
+    }
+  }
+}
+
+#qunit-banner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: $banner-height;
+  margin: 0;
+  background-color: $loading-color;
+  animation: progress-stripes 0.2s linear infinite;
+  background-image: linear-gradient(
+    135deg, rgba(255, 255, 255, .2) 25%,
+    transparent 25%,
+    transparent 50%,
+    rgba(255, 255, 255, .2) 50%,
+    rgba(255, 255, 255, .2) 75%,
+    transparent 75%, transparent
+  );
+  background-size: $banner-height*2 $banner-height*2;
+
+
+  &.qunit-pass {
+    background-color: $pass-color;
+    background-image: none;
+    animation: none;
+  }
+
+  &.qunit-fail {
+    background-color: $fail-color;
+    background-image: none;
+    animation: none;
+  }
+}
+
+@keyframes progress-stripes {
+  0%   { background-position: 0px 0px;  }
+  100% { background-position: $banner-height*2 0px; }
+}

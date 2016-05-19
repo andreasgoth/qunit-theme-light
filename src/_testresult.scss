@@ -1,0 +1,31 @@
+#qunit-testresult {
+  padding: 0.5em $side-margin 0.5em $side-margin;
+  color: #555;
+  margin: 0;
+  border-radius: $global-radius;
+  font-size: 0.9rem;
+
+  br {
+    content: ' ';
+    margin-right: 0.3rem;
+  }
+
+  .passed {
+    color: $pass-color;
+    font-weight: 900;
+  }
+
+  .total {
+    color: #000;
+    font-weight: 900;
+  }
+
+  .failed {
+    color: $fail-color;
+    font-weight: 900;
+  }
+
+  .module-name {
+    font-weight: 700;
+  }
+}

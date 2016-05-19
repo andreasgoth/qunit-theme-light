@@ -1,0 +1,35 @@
+{
+  "name": "qunit-theme-light",
+  "title": "QUnit Light Theme",
+  "description": "A QUnit theme by Andreas Göth.",
+  "version": "1.0",
+  "author": {
+    "name": "Andreas Göth",
+    "url": "https://github.com/andreasgoth/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/andreasgoth/qunit-theme-light.git"
+  },
+  "license": {
+    "name": "MIT",
+    "url": "http://www.opensource.org/licenses/mit-license.php"
+  },
+  "keywords": [
+    "qunit",
+    "qunit-plugin",
+    "qunit-theme"
+  ],
+  "scripts": {
+    "test": "grunt test"
+  },
+  "dependencies": {
+    "qunitjs": "^2.0.0-rc1"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-qunit": "~0.2.1",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-sass": "^1.1.0"
+  }
+}
