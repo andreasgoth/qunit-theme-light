@@ -2,7 +2,7 @@
   "name": "qunit-theme-light",
   "title": "QUnit Light Theme",
   "description": "A QUnit theme by Andreas Göth.",
-  "version": "1.0",
+  "version": "1.0.0",
   "author": {
     "name": "Andreas Göth",
     "url": "https://github.com/andreasgoth/"
